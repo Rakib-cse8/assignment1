@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="form.html" class="nav-option">Form</a></li>
+        <li><a href="table.html" class="nav-option">Table</a></li>
+        <li><a href="news.html" class="nav-option">News Portal</a></li>
+        <li><a href="gallery.html" class="nav-option">Photo Gallery</a></li>
+        <li><a href="contact.html" class="nav-option">Contact</a></li>
+    </ul>
+
+    <div class="outer-container">
+        <div class="register-container">
+            <form class="register-form">
+                <h2>Register</h2>
+                <div class="input-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label>Gender</label>
+                    <div class="gender-group">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="division">Select Your Division</label>
+                    <select id="division" name="division" required>
+                        <option value="" disabled selected>Select your division</option>
+                        <option value="barisal">Barisal</option>
+                        <option value="chittagong">Chittagong</option>
+                        <option value="dhaka">Dhaka</option>
+                        <option value="khulna">Khulna</option>
+                        <option value="mymensingh">Mymensingh</option>
+                        <option value="rajshahi">Rajshahi</option>
+                        <option value="rangpur">Rangpur</option>
+                        <option value="sylhet">Sylhet</option>
+                    </select>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    
+
+</body>
+</html>
